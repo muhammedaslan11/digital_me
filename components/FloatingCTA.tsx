@@ -1,5 +1,5 @@
-import React from "react";
-import { Ticket } from "lucide-react";
+import React from "react"
+import { Ticket } from "lucide-react"
 
 const FloatingCTA: React.FC = () => {
   return (
@@ -7,11 +7,11 @@ const FloatingCTA: React.FC = () => {
       <div className="pointer-events-auto">
         <button className="w-full bg-brand-accent text-white font-bold py-4 rounded-xl shadow-[0_10px_40px_-10px_rgba(55,72,123,0.5)] flex items-center justify-center gap-3 active:scale-95 transition-transform">
           <Ticket className="animate-pulse" />
-          <span>Hemen Kayıt Ol</span>
+          <a href="#register">Hemen Kayıt Ol</a>
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FloatingCTA;
+export default FloatingCTA

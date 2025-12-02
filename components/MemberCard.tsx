@@ -22,7 +22,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ member, index, total }) => {
 
   return (
     <div
-      className="sticky mb-24 min-h-[80vh] w-full flex items-center justify-center px-2 sm:px-4 md:px-8 perspective-1000"
+      className="sticky mb-8 min-h-[80vh] w-full flex items-center justify-center px-2 sm:px-4 md:px-8 perspective-1000"
       style={{ top: `${topOffset}px` }}
     >
       <div
@@ -112,33 +112,10 @@ const MemberCard: React.FC<MemberCardProps> = ({ member, index, total }) => {
                 ))}
               </div>
 
-              <div className="flex items-center gap-6">
-                <button
-                  className={`
-                    group px-8 py-4 rounded-full bg-white text-slate-900 font-bold 
-                    transition-all duration-300 hover:bg-slate-200 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]
-                    flex items-center gap-2
-                 `}
-                >
-                  Profilini İncele
+              {member.email && (
+                <div className="flex items-center gap-3 mt-6 pt-6 border-t border-slate-700">
                   <svg
-                    className="w-5 h-5 transition-transform group-hover:translate-x-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </button>
-
-                <button className="p-4 rounded-full border border-slate-700 hover:border-white text-slate-400 hover:text-white transition-all">
-                  <svg
-                    className="w-5 h-5"
+                    className="w-5 h-5 text-brand-accent flex-shrink-0"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -150,8 +127,14 @@ const MemberCard: React.FC<MemberCardProps> = ({ member, index, total }) => {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                </button>
-              </div>
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="text-slate-300 hover:text-white transition-colors text-sm"
+                  >
+                    {member.email}
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>

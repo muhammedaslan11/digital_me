@@ -18,7 +18,6 @@ const RegistrationForm: React.FC = () => {
   >("idle")
   const [errorMessage, setErrorMessage] = useState("")
   const [kvkkAccepted, setKvkkAccepted] = useState(false)
-  const [privacyAccepted, setPrivacyAccepted] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
@@ -44,7 +43,6 @@ const RegistrationForm: React.FC = () => {
         email: "",
       })
       setKvkkAccepted(false)
-      setPrivacyAccepted(false)
       setTimeout(() => setStatus("idle"), 5000)
     } else {
       setStatus("error")
@@ -56,7 +54,8 @@ const RegistrationForm: React.FC = () => {
   return (
     <section
       id="register"
-      className="py-20 bg-brand-main relative overflow-hidden"
+      className="py-20 relative overflow-hidden"
+      style={{ backgroundColor: "#020010" }}
     >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-brand-accent/5 rounded-full blur-[150px] pointer-events-none" />
@@ -275,9 +274,7 @@ const RegistrationForm: React.FC = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              disabled={
-                status === "loading" || !kvkkAccepted || !privacyAccepted
-              }
+              disabled={status === "loading" || !kvkkAccepted}
               className="w-full bg-brand-accent text-white font-bold py-4 px-8 rounded-xl hover:bg-brand-accent/90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-lg"
             >
               {status === "loading" ? (

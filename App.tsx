@@ -3,12 +3,12 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import WhyAttend from "./components/WhyAttend"
 import Schedule from "./components/Schedule"
 import Speakers from "./components/Speakers"
 import RegistrationForm from "./components/RegistrationForm"
 import Footer from "./components/Footer"
 import FloatingCTA from "./components/FloatingCTA"
-import Team from "./components/Team"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -50,10 +50,14 @@ const App: React.FC = () => {
     "İnsan dokunuşu olmadan yapay zeka sadece bir koddur. Yaratıcılık olmadan veri sadece sayılardır."
 
   return (
-    <div className="bg-brand-main min-h-screen text-white selection:bg-brand-accent selection:text-white overflow-x-hidden">
+    <div
+      className="min-h-screen text-white selection:bg-brand-accent selection:text-white overflow-x-hidden"
+      style={{ backgroundColor: "#020010" }}
+    >
       <Navbar />
       <main>
         <Hero />
+        <WhyAttend />
 
         {/* About / Manifesto Section */}
         <section className="py-32 px-4 container mx-auto text-center relative z-10">
@@ -82,7 +86,6 @@ const App: React.FC = () => {
 
         <Schedule />
         <Speakers />
-        <Team />
         <RegistrationForm />
       </main>
       <Footer />

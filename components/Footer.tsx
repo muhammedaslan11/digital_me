@@ -11,12 +11,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h2 className="text-3xl font-display font-bold text-white mb-6">
-              THE DIGITAL ME <br />{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-main">
-                2025
-              </span>
-            </h2>
+            <img
+              src="/medias/tdm_logo.png"
+              alt="The Digital Me Logo"
+              className="h-12 w-auto mb-6"
+            />
             <p className="text-gray-400 max-w-md">
               Yapay zeka ve yaratıcılığın sınırlarını zorlayan, geleceğin
               iletişim dünyasını bugünden tasarlayan etkinlik.
@@ -54,10 +53,7 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-bold mb-4">İletişim</h3>
             <div className="flex gap-3 text-gray-400 mb-6">
               <Mail className="shrink-0 text-brand-accent" size={20} />
-              <a
-                href="mailto:info@digitalme2025.com"
-                className="text-sm hover:text-white transition-colors"
-              >
+              <a className="text-sm hover:text-white transition-colors">
                 info@digitalme2025.com
               </a>
             </div>
@@ -75,12 +71,6 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-brand-accent transition-colors"
               >
                 <Linkedin size={18} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
-              >
-                <Twitter size={18} />
               </a>
             </div>
           </div>

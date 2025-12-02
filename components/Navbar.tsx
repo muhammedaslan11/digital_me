@@ -16,7 +16,6 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: "Program", href: "#program" },
     { name: "Konuşmacılar", href: "#speakers" },
-    { name: "Ekip", href: "#team" },
     { name: "Kayıt", href: "#register" },
     { name: "Konum", href: "#footer" },
   ]
@@ -31,9 +30,13 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-xl font-display font-bold text-white tracking-tighter z-50">
-          DIGITAL<span className="text-brand-accent">ME</span>
-        </div>
+        <a href="#" className="z-50">
+          <img
+            src="/medias/tdm_logo.png"
+            alt="Digital Me Logo"
+            className="h-10 w-auto"
+          />
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">

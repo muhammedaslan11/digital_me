@@ -1,5 +1,141 @@
 import { Session, Speaker, TeamMember } from "./types"
 
+// Speakers Data for Main Section
+export const SPEAKERS_DATA: TeamMember[] = [
+  {
+    id: 1,
+    name: "Can Faga",
+    role: "Kurucu Ortak",
+    company: "Arthur",
+    bio: "Sektörde 15+ yıllık deneyime sahip, yaratıcı stratejiler geliştiren bir lider.",
+    image:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Strateji", "Yaratıcılık", "Liderlik"],
+    accentColor: "bg-blue-500",
+    email: "can.faga@arthur.com",
+  },
+  {
+    id: 2,
+    name: "Hulisi Derici",
+    role: "Kurucu Ortak",
+    company: "M.A.R.K.A.",
+    bio: "Marka yönetimi ve reklamcılıkta çığır açan projeler gerçekleştirdi.",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Marka Yönetimi", "Reklam", "İnovasyon"],
+    accentColor: "bg-purple-500",
+    email: "hulisi.derici@marka.com",
+  },
+  {
+    id: 3,
+    name: "Cüneyt Devrim",
+    role: "Büyüme Direktörü",
+    company: "Havas",
+    bio: "Büyüme stratejileri ve dijital dönüşüm konusunda uzman danışman.",
+    image:
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Büyüme", "Dijital Dönüşüm", "Strateji"],
+    accentColor: "bg-green-500",
+    email: "cuneyt.devrim@havas.com",
+  },
+  {
+    id: 4,
+    name: "Ergin Binyıldız",
+    role: "Kurucu Ortak",
+    company: ";untold",
+    bio: "Hikaye anlatımı ve içerik stratejisi alanında ödüllü çalışmalar.",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1200",
+    skills: ["İçerik", "Hikaye Anlatımı", "Yaratıcılık"],
+    accentColor: "bg-orange-500",
+    email: "ergin.binyildiz@untold.com",
+  },
+  {
+    id: 5,
+    name: "İnan Savaş Dedebaş",
+    role: "Genel Müdür",
+    company: "Publicis Groupe",
+    bio: "Global iletişim stratejileri ve marka yönetiminde lider pozisyonda.",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Liderlik", "Global Strateji", "İletişim"],
+    accentColor: "bg-red-500",
+    email: "inan.dedebas@publicisgroupe.com",
+  },
+  {
+    id: 6,
+    name: "Meltem Turhan",
+    role: "Kurucu Ortak",
+    company: "fm.",
+    bio: "İletişim ajansı kurucusu, PR ve medya ilişkileri uzmanı.",
+    image:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200",
+    skills: ["PR", "Medya İlişkileri", "İletişim"],
+    accentColor: "bg-pink-500",
+    email: "meltem.turhan@fm.com",
+  },
+  {
+    id: 7,
+    name: "Sevda Solak",
+    role: "Genel Müdür",
+    company: "Time Public Relations",
+    bio: "Halkla ilişkiler ve kurumsal iletişim alanında 20 yıllık deneyim.",
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Halkla İlişkiler", "Kurumsal İletişim", "Yönetim"],
+    accentColor: "bg-teal-500",
+    email: "sevda.solak@timepr.com",
+  },
+  {
+    id: 8,
+    name: "Kerem Ayırtman",
+    role: "Ortak Geliştirici",
+    company: "PBG",
+    bio: "Stratejik ortaklıklar ve iş geliştirme konusunda uzman.",
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=1200",
+    skills: ["İş Geliştirme", "Ortaklıklar", "Strateji"],
+    accentColor: "bg-indigo-500",
+    email: "kerem.ayirtman@pbg.com",
+  },
+  {
+    id: 9,
+    name: "Kaan Ünver",
+    role: "Grup Direktörü",
+    company: "Migros",
+    bio: "Kurumsal iletişim ve marka stratejileri yöneticisi.",
+    image:
+      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Kurumsal İletişim", "Marka Stratejisi", "Yönetim"],
+    accentColor: "bg-yellow-500",
+    email: "kaan.unver@migros.com",
+  },
+  {
+    id: 10,
+    name: "Arzu Çekirge Paksoy",
+    role: "Kurucu",
+    company: "arya",
+    bio: "Sponsorluk ve etkinlik yönetimi alanında öncü girişimci.",
+    image:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Sponsorluk", "Etkinlik Yönetimi", "Girişimcilik"],
+    accentColor: "bg-cyan-500",
+    email: "arzu.paksoy@arya.com",
+  },
+  {
+    id: 11,
+    name: "Didem Cengiz",
+    role: "Kurucu Ortak",
+    company: "Tchibo",
+    bio: "Kurumsal iletişim ve marka yönetimi direktörü.",
+    image:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1200",
+    skills: ["Marka Yönetimi", "Kurumsal İletişim", "Liderlik"],
+    accentColor: "bg-lime-500",
+    email: "didem.cengiz@tchibo.com",
+  },
+]
+
 // Team Members Data
 export const TEAM_MEMBERS: TeamMember[] = [
   {

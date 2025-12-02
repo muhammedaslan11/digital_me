@@ -73,7 +73,8 @@ const Schedule: React.FC = () => {
     <section
       id="program"
       ref={containerRef}
-      className="py-20 bg-brand-main relative overflow-hidden"
+      className="py-20 relative overflow-hidden"
+      style={{ backgroundColor: "#020010" }}
     >
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-accent/5 rounded-full blur-[100px] pointer-events-none" />

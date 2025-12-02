@@ -30,4 +30,5 @@ export interface TeamMember {
   image: string
   skills: string[]
   accentColor: string
+  email?: string
 }

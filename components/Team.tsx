@@ -1,8 +1,11 @@
 import React from "react"
 import { TEAM_MEMBERS } from "../constants"
 import MemberCard from "./MemberCard"
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
 
 const Team: React.FC = () => {
+  const [closingRef, closingVisible] = useIntersectionObserver(0.3)
+
   return (
     <section id="team" className="bg-slate-950 relative z-10 overflow-x-hidden">
       {/* Grain overlay for cinematic feel */}
@@ -26,7 +29,14 @@ const Team: React.FC = () => {
         </div>
 
         {/* Closing Statement */}
-        <div className="h-[50vh] flex items-center justify-center text-center">
+        <div
+          ref={closingRef}
+          className={`h-[50vh] flex items-center justify-center text-center transition-all duration-1000 ease-out ${
+            closingVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-12"
+          }`}
+        >
           <div className="space-y-6">
             <p className="text-slate-500 text-lg uppercase tracking-widest">
               Sıradaki sensin mi?
