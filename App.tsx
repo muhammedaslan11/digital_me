@@ -17,7 +17,6 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Manifesto Text Animation
       const words =
         textContainerRef.current?.querySelectorAll(".manifesto-word")
 
@@ -26,11 +25,11 @@ const App: React.FC = () => {
           words,
           {
             opacity: 0.2,
-            color: "#4b5563", // gray-600
+            color: "#4b5563",
           },
           {
             opacity: 1,
-            color: "#ffffff", // white
+            color: "#ffffff",
             stagger: 0.1,
             scrollTrigger: {
               trigger: textContainerRef.current,
