@@ -212,19 +212,19 @@ export const OPENING_SPEAKERS: Speaker[] = [
     id: "1",
     name: "Prof. Dr. Ayşegül Komşuoğlu Çıtıpıtıoğlu",
     title: "Rektör",
-    image: "https://picsum.photos/200/200?random=1",
+    image: "/medias/aysegul_komsuoglu_citipitioglu.jpeg",
   },
   {
     id: "2",
     name: "Prof. Dr. Selma Karatepe",
     title: "İİSFB Dekanı",
-    image: "https://picsum.photos/200/200?random=2",
+    image: "/medias/selma_karatepe.jpeg",
   },
   {
     id: "3",
     name: "Prof. Dr. Funda Yalım",
     title: "Halkla İlişkiler ve Reklamcılık Bölüm Başkanı",
-    image: "https://picsum.photos/200/200?random=3",
+    image: "/medias/funda_yalim.jpeg",
   },
 ]
 
