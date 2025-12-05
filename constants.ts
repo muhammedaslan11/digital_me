@@ -211,20 +211,19 @@ export const OPENING_SPEAKERS: Speaker[] = [
   {
     id: "1",
     name: "Prof. Dr. Ayşegül Komşuoğlu Çıtıpıtıoğlu",
-    title: "Rektör Prof. Dr. Ayşegül Komşuoğlu Çıtıpıtıoğlu",
+    title: "Rektör",
     image: "https://picsum.photos/200/200?random=1",
   },
   {
     id: "2",
     name: "Prof. Dr. Selma Karatepe",
-    title: "İİSFB Dekan Prof. Dr. Selma Karatepe",
+    title: "İİSFB Dekanı",
     image: "https://picsum.photos/200/200?random=2",
   },
   {
     id: "3",
     name: "Prof. Dr. Funda Yalım",
-    title:
-      "Halkla İlişkiler ve Reklamcılık Bölüm Başkanı Prof. Dr. Funda Yalım",
+    title: "Halkla İlişkiler ve Reklamcılık Bölüm Başkanı",
     image: "https://picsum.photos/200/200?random=3",
   },
 ]
@@ -257,13 +256,6 @@ export const AD_SPEAKERS: Speaker[] = [
     title: "Kurucu Ortak",
     company: "Untold",
     image: "https://picsum.photos/200/200?random=7",
-  },
-  {
-    id: "8",
-    name: "İnanç Savaş Dedebaş",
-    title: "CEO",
-    company: "Publicis Groupe Turkey",
-    image: "https://picsum.photos/200/200?random=8",
   },
 ]
 

@@ -169,11 +169,10 @@ const Schedule: React.FC = () => {
                                 <span className="text-sm font-semibold text-white group-hover/speaker:text-brand-accent transition-colors">
                                   {speaker.name}
                                 </span>
-                                {speaker.company && (
-                                  <span className="text-xs text-gray-400 group-hover/speaker:text-brand-accent/80 transition-colors">
-                                    {speaker.company}
-                                  </span>
-                                )}
+                                <span className="text-xs text-gray-400 group-hover/speaker:text-brand-accent/80 transition-colors">
+                                  {speaker.title}
+                                  {speaker.company && ` • ${speaker.company}`}
+                                </span>
                               </div>
                             </div>
                           ))}
