@@ -41,9 +41,9 @@ const MemberCard: React.FC<MemberCardProps> = ({ member, index, total }) => {
           boxShadow: `0 25px 50px -12px rgba(0, 0, 0, 0.5)`,
         }}
       >
-        <div className="flex flex-col lg:flex-row h-full">
+        <div className="flex flex-col lg:flex-row h-full min-h-[600px] lg:min-h-[600px]">
           {/* Image Section */}
-          <div className="lg:w-1/2 relative h-[400px] lg:h-[600px] overflow-hidden group">
+          <div className="lg:w-1/2 relative h-[400px] lg:h-auto overflow-hidden group bg-slate-800">
             <div
               className={`absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10 opacity-60`}
             />
@@ -54,8 +54,9 @@ const MemberCard: React.FC<MemberCardProps> = ({ member, index, total }) => {
             <img
               src={member.image}
               alt={member.name}
+              style={{ minHeight: "100%" }}
               className={`
-                w-full h-full object-cover object-center
+                absolute inset-0 w-full h-full object-cover object-center
                 transition-transform duration-[1.5s] ease-in-out
                 ${isVisible ? "scale-100" : "scale-110"}
                 group-hover:scale-105

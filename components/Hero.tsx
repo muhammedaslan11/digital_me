@@ -137,7 +137,7 @@ const Hero: React.FC = () => {
         {/* Subtitle */}
         <div ref={subTextRef} className="max-w-2xl mx-auto space-y-4 mb-12">
           <p className="text-gray-300 text-lg md:text-xl font-light leading-relaxed">
-            İletişim dünyasının liderleri sahnemizde{" "}
+            İletişim dünyasının liderlerini sahnemizde{" "}
             <br className="hidden md:block" /> ağırlamaktan gurur duyuyoruz.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm text-gray-400">

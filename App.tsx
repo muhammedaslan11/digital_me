@@ -6,6 +6,7 @@ import Hero from "./components/Hero"
 import WhyAttend from "./components/WhyAttend"
 import Schedule from "./components/Schedule"
 import Speakers from "./components/Speakers"
+import Sponsors from "./components/Sponsors"
 import RegistrationForm from "./components/RegistrationForm"
 import Footer from "./components/Footer"
 import FloatingCTA from "./components/FloatingCTA"
@@ -84,7 +85,22 @@ const App: React.FC = () => {
         </section>
 
         <Schedule />
+
+        {/* Einstein Quote Section */}
+        <section className="py-24 px-4 container mx-auto text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <blockquote className="text-2xl md:text-4xl lg:text-5xl font-display font-light text-white/90 leading-relaxed">
+              "Öğrenmeyi bıraktığında ölmeye başlarsın"
+            </blockquote>
+            <cite className="block mt-8 text-brand-accent font-mono text-sm tracking-widest uppercase">
+              — Albert Einstein
+            </cite>
+          </div>
+          <div className="mt-12 w-px h-24 bg-gradient-to-b from-brand-accent/0 via-brand-accent/50 to-brand-accent/0 mx-auto opacity-50"></div>
+        </section>
+
         <Speakers />
+        <Sponsors />
         <RegistrationForm />
       </main>
       <Footer />

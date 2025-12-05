@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
               className="h-12 w-auto mb-6"
             />
             <p className="text-gray-400 max-w-md">
-              Yapay zeka ve yaratıcılığın sınırlarını zorlayan, geleceğin
-              iletişim dünyasını bugünden tasarlayan etkinlik.
+              Her bir yıldızın kendi yolculuğunda güçlenmesine, ilham bulmasına
+              ve geleceğine daha umutla bakmasına vesile olmak için var.
             </p>
           </div>
 
@@ -53,21 +53,28 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-bold mb-4">İletişim</h3>
             <div className="flex gap-3 text-gray-400 mb-6">
               <Mail className="shrink-0 text-brand-accent" size={20} />
-              <a className="text-sm hover:text-white transition-colors">
-                info@digitalme2025.com
+              <a
+                href="mailto:prelationskulubu@nisantasi.edu.tr"
+                className="text-sm hover:text-white transition-colors"
+              >
+                prelationskulubu@nisantasi.edu.tr
               </a>
             </div>
 
             <h3 className="text-white font-bold mb-4">Takip Et</h3>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/prelationsclub"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-brand-accent transition-colors"
               >
                 <Instagram size={18} />
               </a>
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-brand-accent transition-colors"
               >
                 <Linkedin size={18} />

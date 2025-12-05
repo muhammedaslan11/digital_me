@@ -20,15 +20,15 @@ const WhyAttend: React.FC = () => {
   const reasons: Reason[] = [
     {
       icon: BrainCircuit,
-      title: "Yapay Zeka & Sen",
+      title: "Yapay Zeka Kullanmayı Öğren",
       description:
-        "AI sadece bir araç değil, yeni bir uzvumuz. Yaratıcılığını makine öğrenimiyle nasıl melezleyeceğini keşfet.",
+        "AI sadece bir araç değil, yeni bir uzvumuz. Yaratıcılığını yapay zeka ile nasıl melezleyeceğini keşfet.",
     },
     {
       icon: Fingerprint,
-      title: "Dijital Parmak İzi",
+      title: "Katılım Belgesi",
       description:
-        "Algoritmalar dünyasında kaybolma. Kendi özgün sesini, dijital gürültünün içinde nasıl bir markaya dönüştüreceğini öğren.",
+        "Yıldızların bir araya geldiği bu etkinlikte kendi yörüngeni keşfederken katılım belgeni almayı unutma.",
     },
     {
       icon: Network,
@@ -130,27 +130,24 @@ const WhyAttend: React.FC = () => {
                 Manifesto
               </span>
               <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-8">
-                <span className="text-white">
-                  Gelecek, onu bekleyenlerin değil,
-                </span>
-                <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white">
-                  onu tasarlayanlarındır.
+                  The Digital Me 2025 Yıldızların Yörüngesini Bulduğu Yolculuk
                 </span>
               </h2>
             </div>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              2025 yılı bir kırılma noktası. Dijital ve fiziksel gerçekliğin
-              sınırları eridi. "THE DIGITAL ME", sadece bir konferans değil;
-              yeni dünya düzenine giriş biletiniz.
+              İstanbul Nişantaşı Üniversitesi Halkla İlişkiler ve Reklamcılık
+              Kulübü olarak düzenlediğimiz The Digital Me 2025, bir etkinlikten
+              çok daha fazlası…
             </p>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              Burada teorik bilgi yok. Burada, yarının reklamcılığını, halkla
-              ilişkilerini ve sosyal medya dinamiklerini bugün inşa eden
-              vizyonerler var. Sıradanlığın ötesine geçmek için, bu salonda
-              olmalısın.
+              Bu konsepti, bir galaksi yolculuğu olarak tasarladık. Çünkü bize
+              göre bu etkinliğe gelen her öğrenci, içindeki ışığıyla
+              keşfedilmeyi bekleyen özel bir yıldız. The Digital Me 2025, her
+              bir yıldızın kendi yolculuğunda güçlenmesine, ilham bulmasına ve
+              geleceğine daha umutla bakmasına vesile olmak için var.
             </p>
           </div>
 

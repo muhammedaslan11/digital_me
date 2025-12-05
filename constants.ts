@@ -3,6 +3,17 @@ import { Session, Speaker, TeamMember } from "./types"
 // Speakers Data for Main Section
 export const SPEAKERS_DATA: TeamMember[] = [
   {
+    id: 0,
+    name: "Dr. Fatma Kamiloğlu",
+    role: "Öğretim Üyesi",
+    company: "İstanbul Nişantaşı Üniversitesi",
+    bio: "İstanbul Nişantaşı Üniversitesi Halkla İlişkiler ve Reklamcılık Bölümü öğretim üyesi. Dijital iletişim, sosyal medya ve yapay zeka uygulamaları konularında araştırmalar yapıyor. The Digital Me 2025 etkinliğinin akademik danışmanı.",
+    image: "/medias/fatma_kamiloglu.JPG",
+    skills: ["Dijital İletişim", "Akademik Danışmanlık", "Yapay Zeka"],
+    accentColor: "bg-violet-500",
+    email: "fatma.kamiloglu@nisantasi.edu.tr",
+  },
+  {
     id: 1,
     name: "Can Faga",
     role: "Kurucu Ortak",
@@ -200,19 +211,20 @@ export const OPENING_SPEAKERS: Speaker[] = [
   {
     id: "1",
     name: "Prof. Dr. Ayşegül Komşuoğlu Çıtıpıtıoğlu",
-    title: "Üniversite Rektörü",
+    title: "Rektör Prof. Dr. Ayşegül Komşuoğlu Çıtıpıtıoğlu",
     image: "https://picsum.photos/200/200?random=1",
   },
   {
     id: "2",
     name: "Prof. Dr. Selma Karatepe",
-    title: "İ.İ.S.B.F. Dekanı",
+    title: "İİSFB Dekan Prof. Dr. Selma Karatepe",
     image: "https://picsum.photos/200/200?random=2",
   },
   {
     id: "3",
     name: "Prof. Dr. Funda Yalım",
-    title: "Halkla İlişkiler ve Tanıtım Bölüm Başkanı",
+    title:
+      "Halkla İlişkiler ve Reklamcılık Bölüm Başkanı Prof. Dr. Funda Yalım",
     image: "https://picsum.photos/200/200?random=3",
   },
 ]
@@ -364,24 +376,15 @@ export const SCHEDULE: Session[] = [
     id: "s6",
     time: "13.15 – 14.00",
     title: "Öğle Arası",
+    description:
+      "Kapanış konuşması, fotoğraf çekimi, katılım sertifikası dağıtımı ve işbirliklerin imzalanması.",
     type: "break",
   },
   {
     id: "s7",
     time: "14.00 – 15.00",
-    title: "Dijital Çağda Yapay Zekâ Destekli Sosyal Medya Yönetimi",
-    description:
-      "İçerik Optimizasyonu, Trend Analizi ve Toplulukların Dijital Zekâsı.",
-    chair: "Dr. Fatma Kamiloğlu",
-    speakers: INFLUENCERS,
-    type: "panel",
-  },
-  {
-    id: "s8",
-    time: "15.00",
-    title: "Kapanış & Networking",
-    description:
-      "Kapanış konuşması, fotoğraf çekimi, katılım sertifikası dağıtımı ve işbirliklerin imzalanması.",
+    title: "Network Arena ve After Party",
+    description: "Sürprizlerle dolu",
     type: "networking",
   },
 ]
